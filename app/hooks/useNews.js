@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import newsApi from '../api/newsApi';
 
-export default useNews = () => {
+const useNews = () => {
   const [featuredNews, setFeaturedNews] = useState({});
   const [breakingNews, setBreakingNews] = useState([]);
   const [politicalNews, setPoliticalNews] = useState([]);
@@ -53,3 +53,5 @@ export default useNews = () => {
     loading,
   ];
 };
+
+export default useNews;

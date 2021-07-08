@@ -8,8 +8,8 @@ const getAll = async () => {
       return response.data.news;
     }
   } catch (error) {
-    return [];
     console.log('Error while getting all news.', error.message);
+    return [];
   }
 };
 
